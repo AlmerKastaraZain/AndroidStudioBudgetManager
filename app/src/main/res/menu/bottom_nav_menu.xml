@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_wallet"
+        android:icon="@drawable/wallet"
+        android:title="@string/title_wallet" />
+    <item
+        android:id="@+id/navigation_report"
+        android:icon="@drawable/graph__1__3"
+        android:title="@string/title_report" />
+    <item
+        android:id="@+id/navigation_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/plus__2_"
+        android:title="@string/title_create" />
+
+    <item
+        android:id="@+id/navigation_target"
+        android:icon="@drawable/target"
+        android:title="@string/title_target" />
+    <item
+        android:id="@+id/navigation_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/account"
+        android:title="@string/title_account" />
+
+</menu>
