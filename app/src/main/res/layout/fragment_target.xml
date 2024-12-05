@@ -1,22 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".ui.target.TargetFragment">
 
+    <!-- Header -->
     <TextView
-        android:id="@+id/text_notifications"
-        android:layout_width="match_parent"
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="My Targets"
+        android:textSize="24sp"
+        android:textColor="#333"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="16dp" />
+
+    <!-- ScrollView for Target List -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Target Item 1 -->
+            <include layout="@layout/item_target_card" />
+
+            <!-- Target Item 2 -->
+            <include layout="@layout/item_target_card" />
+
+            <!-- Target Item 3 (Optional) -->
+            <include layout="@layout/item_target_card" />
+
+            <!-- Button to Add New Target -->
+            <Button
+                android:id="@+id/btnAddNewTarget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="+ Add New Target"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:backgroundTint="#fff"
+                android:elevation="6dp"
+                android:paddingVertical="12dp"
+                app:strokeColor="#000"
+                app:strokeWidth="1dp"
+                android:gravity="center"
+                app:rippleColor="#999" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -28,10 +28,6 @@ class WalletFragment : Fragment() {
         _binding = FragmentWalletBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDashboard
-        walletViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
     }
 

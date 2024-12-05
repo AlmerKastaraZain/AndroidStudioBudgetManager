@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
+import android.view.Window
 import android.view.inputmethod.EditorInfo
 import android.widget.EditText
 import android.widget.Toast
@@ -24,11 +25,12 @@ class RegisterActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
 
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val username = binding.Username
+        // val username = binding.Username
         val password = binding.password
         val login = binding.login
         val loading = binding.loading

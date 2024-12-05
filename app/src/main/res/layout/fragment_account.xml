@@ -6,59 +6,189 @@
     android:layout_height="match_parent"
     tools:context=".ui.target.TargetFragment">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="418dp"
-        android:layout_height="341dp"
-        android:src="@drawable/linetopaccount"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="-55dp" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/user"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="75dp" />
+    <TextView
+        android:id="@+id/NameAccount"
+        android:layout_width="125dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="-30dp"
+        android:text="Xxx_Naufal123_xxX"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="409dp"
         android:layout_height="443dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="50dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="287dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NameAccount">
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="69dp">
+            android:layout_height="69dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/primary">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@color/secondary"
+                android:padding="12dp"
+                android:src="@drawable/bx_user_svg" />
+
+            <TextView
+                android:id="@+id/Usernametext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="35dp"
+                android:text="UsernameHere"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/Username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="10dp"
+                android:text="UsernameHere"
+                android:textColor="@color/white" />
 
         </FrameLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="73dp">
+            android:layout_height="73dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/primary">
 
+            <TextView
+                android:id="@+id/Emailtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="10dp"
+                android:text="UsernameHere"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="35dp"
+                android:text="UsernameHere"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@color/secondary"
+                android:padding="12dp"
+                android:src="@drawable/bx_mail_send_svg" />
         </FrameLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="66dp">
+            android:layout_height="66dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/primary">
 
+            <TextView
+                android:id="@+id/LocationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="10dp"
+                android:text="UsernameHere"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/Location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="35dp"
+                android:text="UsernameHere"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@color/secondary"
+                android:padding="12dp"
+                android:src="@drawable/bxs_map_svg" />
         </FrameLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="66dp">
+            android:layout_height="66dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/primary">
 
+            <TextView
+                android:id="@+id/WhatsappText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="10dp"
+                android:text="UsernameHere"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/Whatsapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="35dp"
+                android:text="UsernameHere"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@color/secondary"
+                android:padding="12dp"
+                android:src="@drawable/bxl_whatsapp_svg" />
         </FrameLayout>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="131dp"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="34dp" />
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/user"
+        app:layout_constraintBottom_toTopOf="@+id/NameAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
